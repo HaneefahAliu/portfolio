@@ -1,4 +1,2 @@
 # portfolio
 
-
-haneefah.netlify.app
