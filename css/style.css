@@ -1,0 +1,236 @@
+/* Reset CSS */
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* General styles */
+body {
+    background-color: #010F1D;
+}
+
+.navbar {
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+.navbar a {
+    color: #ffffff;
+    float: left;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+
+.navbar a.active,
+.navbar a:hover {
+    color: #FFA000;
+}
+
+.navbar .logo {
+    font-family: 'Tangerine', cursive;
+    font-size: 50px;
+}
+
+.nav-item {
+    float: right;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+}
+
+/* Home Styles */
+.body-content {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.body-content h1 {
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+.body-content p {
+    font-size: 15px;
+    font-weight: 300;
+    padding-bottom: 50px;
+}
+
+.body-content a {
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 14px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.body-content a:hover {
+    border: 1px solid #FFA000;
+    color: #FFA000;
+}
+
+/* Works Styles */
+.works h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 28px;
+    padding-top: 30px;
+}
+
+.works span {
+    color: #FFA000;
+}
+
+.works-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.works-card .wrap {
+    margin: 20px;
+}
+
+.wrap {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 345px;
+    height: 220px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #FFA000;
+    border-radius: 10px;
+}
+
+.wrap img {
+    width: 345px;
+    height: 220px;
+    position: absolute;
+}
+
+.wrap img:hover {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    
+}
+
+.text  {
+    z-index: -1;
+    width: 345px;
+    display: inline-block;
+    padding: 100px 0;
+    height: 220px;
+    color: #FFDEA7;
+    font-family: 'Roboto', sans-serif;
+}
+
+.text p {
+    color: #ffffff;
+}
+
+/* About Styles */
+.container {
+    display: flex;
+    padding: 30px;
+    width: 75%;
+    margin: auto;
+}
+
+.container img {
+    width: 170px;
+    border-radius: 10px;
+    margin-right: 100px;
+}
+
+.icons {
+    margin: 10px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.icons i {
+    color: #ffffff;
+    font-size: 22px;
+    margin: 6px;
+}
+
+.icons i:hover {
+    color: #FFA000;
+}
+
+.icons .devicon-twitter-original {
+    font-size: 20px;
+}
+
+.row h1 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.row h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.row h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.row p {
+    font-size: 1.1rem;
+    color: #fff;
+    line-height: 1.7;
+    max-width: 70ch;
+    margin-bottom: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.row a {
+    text-decoration: none;
+}
+
+.row a.cv-btn {
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 10px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 18px;
+}
+
+.row a.cv-btn:hover {
+    color: #FFA000;
+    border: 1px solid #FFA000;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+}
