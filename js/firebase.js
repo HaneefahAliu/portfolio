@@ -17,8 +17,10 @@ window.onload = function() {
             e.preventDefault();
 
             var projectImage = document.getElementById('projectImage').files[0]
+            var projectName = document.getElementById('projectName').value;
+            var projectRole = document.getElementById('projectRole').value;
             var projectDescription = document.getElementById('projectDescription').value;
-            var projectCategory = document.getElementById('projectCategory').value;
+            var projectLink = document.getElementById('projectLink').value;
 
             // Create the file metadata
             var metadata = {
@@ -67,8 +69,10 @@ window.onload = function() {
                      // upload to produt table
                     database.ref('projects').push().set({
                         projectImage: downloadURL,
+                        projectName: projectName,
+                        projectRole : projectRole,
                         projectDescription: projectDescription,
-                        projectCategory : projectCategory
+                        projectLink: projectLink
                     })
                     .then((result) => {
                     console.log("Project added successfully => ", result)
@@ -84,9 +88,10 @@ window.onload = function() {
 }
 
 
-var firebaseProject = document.getElementsByClassName('flex-card')[0]
+var firebaseProject = document.getElementsByClassName('cards')[0]
 var projectsDataRef = database.ref("projects");
-projectsDataRef.on("value", function(snapshot) {
+
+projectsDataRef.once("value", function(snapshot) {
     snapshot.forEach(function(childSnapshot) {
         var childData = childSnapshot.val();
         // console.log(childData)
@@ -97,18 +102,30 @@ projectsDataRef.on("value", function(snapshot) {
         var projectImg = document.createElement("img")
         projectImg.imageSrc =  '<img '+ ' src="' + childData.projectImage + '"/>' 
 
-        var projectDesc = document.createElement("h2");
-        projectDesc.innerHTML = '<h2>'+ childData.projectDescription + '</h2>'
+        var projectNm = document.createElement("h2");
+        projectNm.innerHTML = '<h2>'+ childData.projectName + '</h2>'
 
-        var projectType = document.createElement("p");
-        projectType.innerHTML = '<p>' + childData.projectCategory + '</p>'
+        var projecRl = document.createElement("h3");
+        projecRl.innerHTML = '<h3>'+ childData.projectRole + '</h3>'
 
+        var projectDesc = document.createElement("p");
+        projectDesc.innerHTML = '<p>' + childData.projectDescription + '</p>'
 
+        var projectLink = document.createElement("a");
+        projectLink.downloadURL = '<a '+ 'target="_blank"' + ' href="' + childData.projectLink + '">' + "View Project" + '</a>'
 
-        card.innerHTML = projectImg.imageSrc + projectDesc.innerHTML + projectType.innerHTML + '<button class="">View Project</button>'
+        var cardText = document.createElement("div")
+        cardText.className = "card-text";
+
+        cardText.innerHTML = projectNm.innerHTML + projecRl.innerHTML + projectDesc.innerHTML +  projectLink.downloadURL
+
+        card.innerHTML = projectImg.imageSrc  
 
         console.log(card)
         firebaseProject.appendChild(card);
+        card.appendChild(cardText);
     });
 });
 
+
+   
