@@ -54,32 +54,49 @@ body {
 .body-content {
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
+<<<<<<< HEAD
 
     display: flex;
     justify-content: center;
 }
 
 .description {
+=======
+>>>>>>> 60e51309abdc456ab633ab2ee376987c37bd571e
     position: absolute;
     top: 50%;
     left: 20%;
     transform: translate(-50%, -50%);
+<<<<<<< HEAD
     margin-right: 50px;
 }
 
 .description h1 {
+=======
+}
+
+.body-content h1 {
+>>>>>>> 60e51309abdc456ab633ab2ee376987c37bd571e
     font-size: 40px;
     font-weight: 700;
     padding-bottom: 15px;
 }
 
+<<<<<<< HEAD
 .description p {
+=======
+.body-content p {
+>>>>>>> 60e51309abdc456ab633ab2ee376987c37bd571e
     font-size: 15px;
     font-weight: 300;
     padding-bottom: 50px;
 }
 
+<<<<<<< HEAD
 .description a {
+=======
+.body-content a {
+>>>>>>> 60e51309abdc456ab633ab2ee376987c37bd571e
     text-decoration: none;
     border: 1px solid #ffffff;
     background-color: transparent;
@@ -89,14 +106,82 @@ body {
     cursor: pointer;
 }
 
+<<<<<<< HEAD
 .description a:hover {
+=======
+.body-content a:hover {
+>>>>>>> 60e51309abdc456ab633ab2ee376987c37bd571e
     border: 1px solid #FFA000;
     color: #FFA000;
 }
 
+<<<<<<< HEAD
 .body-content img {
     width: 700px;
     padding-left: 500px;
+=======
+/* Works Styles */
+.works h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 28px;
+    padding-top: 30px;
+}
+
+.works span {
+    color: #FFA000;
+}
+
+.works-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.works-card .wrap {
+    margin: 20px;
+}
+
+.wrap {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 345px;
+    height: 220px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #FFA000;
+    border-radius: 10px;
+}
+
+.wrap img {
+    width: 345px;
+    height: 220px;
+    position: absolute;
+}
+
+.wrap img:hover {
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    
+}
+
+.text  {
+    z-index: -1;
+    width: 345px;
+    display: inline-block;
+    padding: 100px 0;
+    height: 220px;
+    color: #FFDEA7;
+    font-family: 'Roboto', sans-serif;
+}
+
+.text p {
+    color: #ffffff;
+>>>>>>> 60e51309abdc456ab633ab2ee376987c37bd571e
 }
 
 /* About Styles */
@@ -114,7 +199,13 @@ body {
 }
 
 .icons {
+<<<<<<< HEAD
     margin: 15px 10px 30px;
+=======
+    margin: 10px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+>>>>>>> 60e51309abdc456ab633ab2ee376987c37bd571e
 }
 
 .icons i {
@@ -180,6 +271,7 @@ body {
 .skills {
     display: flex;
     justify-content: space-between;
+<<<<<<< HEAD
 }
 
 /* Works Styles */
@@ -236,4 +328,6 @@ body {
     background-color: #FFA000;
     border: 1px solid #FFA000;
     transition: 0.8s;
+=======
+>>>>>>> 60e51309abdc456ab633ab2ee376987c37bd571e
 }
