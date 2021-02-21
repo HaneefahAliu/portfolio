@@ -54,25 +54,32 @@ body {
 .body-content {
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
+
+    display: flex;
+    justify-content: center;
+}
+
+.description {
     position: absolute;
     top: 50%;
     left: 20%;
     transform: translate(-50%, -50%);
+    margin-right: 50px;
 }
 
-.body-content h1 {
+.description h1 {
     font-size: 40px;
     font-weight: 700;
     padding-bottom: 15px;
 }
 
-.body-content p {
+.description p {
     font-size: 15px;
     font-weight: 300;
     padding-bottom: 50px;
 }
 
-.body-content a {
+.description a {
     text-decoration: none;
     border: 1px solid #ffffff;
     background-color: transparent;
@@ -82,72 +89,14 @@ body {
     cursor: pointer;
 }
 
-.body-content a:hover {
+.description a:hover {
     border: 1px solid #FFA000;
     color: #FFA000;
 }
 
-/* Works Styles */
-.works h1 {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    color: #ffffff;
-    font-weight: 500;
-    font-size: 28px;
-    padding-top: 30px;
-}
-
-.works span {
-    color: #FFA000;
-}
-
-.works-card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-}
-
-.works-card .wrap {
-    margin: 20px;
-}
-
-.wrap {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 345px;
-    height: 220px;
-    overflow: hidden;
-    text-align: center;
-    background-color: #FFA000;
-    border-radius: 10px;
-}
-
-.wrap img {
-    width: 345px;
-    height: 220px;
-    position: absolute;
-}
-
-.wrap img:hover {
-    opacity: 0;
-    transition: opacity 0.2s ease;
-    
-}
-
-.text  {
-    z-index: -1;
-    width: 345px;
-    display: inline-block;
-    padding: 100px 0;
-    height: 220px;
-    color: #FFDEA7;
-    font-family: 'Roboto', sans-serif;
-}
-
-.text p {
-    color: #ffffff;
+.body-content img {
+    width: 700px;
+    padding-left: 500px;
 }
 
 /* About Styles */
@@ -165,9 +114,7 @@ body {
 }
 
 .icons {
-    margin: 10px;
-    margin-top: 15px;
-    margin-bottom: 30px;
+    margin: 15px 10px 30px;
 }
 
 .icons i {
@@ -233,4 +180,60 @@ body {
 .skills {
     display: flex;
     justify-content: space-between;
+}
+
+/* Works Styles */
+.project h1 {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.project span {
+    color: #FFA000;
+}
+
+.flex-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 30px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card img {
+    width: 370px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.card h2 {
+    font-weight: 500;
+    margin: 15px 0px 10px 0px;
+}
+
+.card p {
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.card button {
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 14px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    /* margin: 18px; */
+}
+
+.card button:hover {
+    background-color: #FFA000;
+    border: 1px solid #FFA000;
+    transition: 0.8s;
 }
