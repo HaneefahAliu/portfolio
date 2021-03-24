@@ -103,13 +103,13 @@ projectsDataRef.once("value", function(snapshot) {
         projectImg.imageSrc =  '<img '+ ' src="' + childData.projectImage + '"/>' 
 
         var projectNm = document.createElement("h2");
-        projectNm.innerHTML = '<h2>'+ childData.projectName + '</h2>'
+        projectNm.innerHTML = '<h3>'+ childData.projectName + '</h3>'
 
         var projecRl = document.createElement("h3");
-        projecRl.innerHTML = '<h3>'+ childData.projectRole + '</h3>'
+        projecRl.innerHTML = '<h4>'+ childData.projectRole + '</h4>'
 
         var projectDesc = document.createElement("p");
-        projectDesc.innerHTML = '<p>' + childData.projectDescription + '</p>'
+        projectDesc.innerHTML = '<h5>' + childData.projectDescription + '</h5>'
 
         var projectLink = document.createElement("a");
         projectLink.downloadURL = '<a '+ 'target="_blank"' + ' href="' + childData.projectLink + '">' + "View Project" + '</a>'

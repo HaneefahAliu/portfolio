@@ -26,10 +26,10 @@
                 <ul class="nav-item">
                     <li>Haneefah</li>
                     <li>
-                        <a class="active" href="index.html">home</a>
+                        <a href="index.html">home</a>
                     </li>
                     <li>
-                        <a href="project.html">projects</a>
+                        <a class="active" href="project.html">projects</a>
                     </li>
                     <li>
                         <a href="mailto:aliuhaneefah@gmail.com">contact</a>
@@ -39,36 +39,10 @@
         </header>
 
         <main>
-            <section>
-                <div class="container">
-                    <div class="body-content">
-                        <div class="image-container">
-                            <img class="home-image" src="assets/me-2.JPG" alt="Haneefah">
-                        </div>
-                        <div class="text-container">
-                            <h1>My name is Haneefah and I am a user interface designer and frontend developer.
-                            </h1>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section>
-                <div class="container small">
-                    <p class="large-paragraph">
-                        I have a stong interest in creating good user experience. I love how I am able
-                        to design and develop experiences that make people's lives easier by using
-                        various tools and technologies.
-                        <br><br>
-                        I enjoy building products that are fascinating and spontaneous where users do
-                        not need to think too much to get the hang of what they are doing while also
-                        being visually appealing.<br><br>
-                        I graduated from Babcock University in 2020 with a degree in Computer Science
-                        (Information Sytems) and I am presently in Lagos, Nigeria. When I am not on my
-                        computer, I am listening to songs or watching Korean dramas :)
-                    </p>
-                </div>
-            </section>
+            <div class="project">
+                <h2>Recent projects</h2>
+                <div class="cards"></div>
+            </div>
         </main>
 
         <hr>
@@ -91,5 +65,10 @@
                 </ul>
             </div>
         </footer>
+
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+        <script src="js/firebase.js"></script>
+        <script src="js/app.js"></script>
     </body>
 </html>

@@ -1,0 +1,288 @@
+@font-face {
+    font-family: 'RecifeDisplay';
+    src: url('RecifeDisplay-Black.eot');
+    src: local('RecifeDisplay Black'), local('RecifeDisplay-Black'),
+        url('RecifeDisplay-Black.eot?#iefix') format('embedded-opentype'),
+        url('RecifeDisplay-Black.woff2') format('woff2'),
+        url('RecifeDisplay-Black.woff') format('woff'),
+        url('RecifeDisplay-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RecifeDisplay Book';
+    src: url('RecifeDisplay-Book.eot');
+    src: local('RecifeDisplay Book'), local('RecifeDisplay-Book'),
+        url('RecifeDisplay-Book.eot?#iefix') format('embedded-opentype'),
+        url('RecifeDisplay-Book.woff2') format('woff2'),
+        url('RecifeDisplay-Book.woff') format('woff'),
+        url('RecifeDisplay-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RecifeDisplay';
+    src: url('RecifeDisplay-LightItalic.eot');
+    src: local('RecifeDisplay Light Italic'), local('RecifeDisplay-LightItalic'),
+        url('RecifeDisplay-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('RecifeDisplay-LightItalic.woff2') format('woff2'),
+        url('RecifeDisplay-LightItalic.woff') format('woff'),
+        url('RecifeDisplay-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RecifeDisplay';
+    src: url('RecifeDisplay-SemiBold.eot');
+    src: local('RecifeDisplay SemiBold'), local('RecifeDisplay-SemiBold'),
+        url('RecifeDisplay-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('RecifeDisplay-SemiBold.woff2') format('woff2'),
+        url('RecifeDisplay-SemiBold.woff') format('woff'),
+        url('RecifeDisplay-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RecifeText';
+    src: url('RecifeText-Regular.eot');
+    src: local('RecifeText Regular'), local('RecifeText-Regular'),
+        url('RecifeText-Regular.eot?#iefix') format('embedded-opentype'),
+        url('RecifeText-Regular.woff2') format('woff2'),
+        url('RecifeText-Regular.woff') format('woff'),
+        url('RecifeText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RecifeDisplay';
+    src: url('RecifeDisplay-Bold.eot');
+    src: local('RecifeDisplay Bold'), local('RecifeDisplay-Bold'),
+        url('RecifeDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('RecifeDisplay-Bold.woff2') format('woff2'),
+        url('RecifeDisplay-Bold.woff') format('woff'),
+        url('RecifeDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RecifeText';
+    src: url('RecifeText-BoldItalic.eot');
+    src: local('RecifeText Bold Italic'), local('RecifeText-BoldItalic'),
+        url('RecifeText-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('RecifeText-BoldItalic.woff2') format('woff2'),
+        url('RecifeText-BoldItalic.woff') format('woff'),
+        url('RecifeText-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RecifeText';
+    src: url('RecifeText-RegularItalic.eot');
+    src: local('RecifeText Regular Italic'), local('RecifeText-RegularItalic'),
+        url('RecifeText-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('RecifeText-RegularItalic.woff2') format('woff2'),
+        url('RecifeText-RegularItalic.woff') format('woff'),
+        url('RecifeText-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RecifeDisplay';
+    src: url('RecifeDisplay-BlackItalic.eot');
+    src: local('RecifeDisplay Black Italic'), local('RecifeDisplay-BlackItalic'),
+        url('RecifeDisplay-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('RecifeDisplay-BlackItalic.woff2') format('woff2'),
+        url('RecifeDisplay-BlackItalic.woff') format('woff'),
+        url('RecifeDisplay-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RecifeText';
+    src: url('RecifeText-BlackItalic.eot');
+    src: local('RecifeText Black Italic'), local('RecifeText-BlackItalic'),
+        url('RecifeText-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('RecifeText-BlackItalic.woff2') format('woff2'),
+        url('RecifeText-BlackItalic.woff') format('woff'),
+        url('RecifeText-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RecifeText';
+    src: url('RecifeText-Light.eot');
+    src: local('RecifeText Light'), local('RecifeText-Light'),
+        url('RecifeText-Light.eot?#iefix') format('embedded-opentype'),
+        url('RecifeText-Light.woff2') format('woff2'),
+        url('RecifeText-Light.woff') format('woff'),
+        url('RecifeText-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RecifeText';
+    src: url('RecifeText-SemiBold.eot');
+    src: local('RecifeText SemiBold'), local('RecifeText-SemiBold'),
+        url('RecifeText-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('RecifeText-SemiBold.woff2') format('woff2'),
+        url('RecifeText-SemiBold.woff') format('woff'),
+        url('RecifeText-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RecifeText Book';
+    src: url('RecifeText-Book.eot');
+    src: local('RecifeText Book'), local('RecifeText-Book'),
+        url('RecifeText-Book.eot?#iefix') format('embedded-opentype'),
+        url('RecifeText-Book.woff2') format('woff2'),
+        url('RecifeText-Book.woff') format('woff'),
+        url('RecifeText-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RecifeText';
+    src: url('RecifeText-LightItalic.eot');
+    src: local('RecifeText Light Italic'), local('RecifeText-LightItalic'),
+        url('RecifeText-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('RecifeText-LightItalic.woff2') format('woff2'),
+        url('RecifeText-LightItalic.woff') format('woff'),
+        url('RecifeText-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RecifeDisplay';
+    src: url('RecifeDisplay-Light.eot');
+    src: local('RecifeDisplay Light'), local('RecifeDisplay-Light'),
+        url('RecifeDisplay-Light.eot?#iefix') format('embedded-opentype'),
+        url('RecifeDisplay-Light.woff2') format('woff2'),
+        url('RecifeDisplay-Light.woff') format('woff'),
+        url('RecifeDisplay-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RecifeDisplay';
+    src: url('RecifeDisplay-BoldItalic.eot');
+    src: local('RecifeDisplay Bold Italic'), local('RecifeDisplay-BoldItalic'),
+        url('RecifeDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('RecifeDisplay-BoldItalic.woff2') format('woff2'),
+        url('RecifeDisplay-BoldItalic.woff') format('woff'),
+        url('RecifeDisplay-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RecifeText Book';
+    src: url('RecifeText-BookItalic.eot');
+    src: local('RecifeText Book Italic'), local('RecifeText-BookItalic'),
+        url('RecifeText-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('RecifeText-BookItalic.woff2') format('woff2'),
+        url('RecifeText-BookItalic.woff') format('woff'),
+        url('RecifeText-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RecifeText';
+    src: url('RecifeText-Black.eot');
+    src: local('RecifeText Black'), local('RecifeText-Black'),
+        url('RecifeText-Black.eot?#iefix') format('embedded-opentype'),
+        url('RecifeText-Black.woff2') format('woff2'),
+        url('RecifeText-Black.woff') format('woff'),
+        url('RecifeText-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RecifeDisplay';
+    src: url('RecifeDisplay-Regular.eot');
+    src: local('RecifeDisplay Regular'), local('RecifeDisplay-Regular'),
+        url('RecifeDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('RecifeDisplay-Regular.woff2') format('woff2'),
+        url('RecifeDisplay-Regular.woff') format('woff'),
+        url('RecifeDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RecifeDisplay';
+    src: url('RecifeDisplay-SemiBoldItalic.eot');
+    src: local('RecifeDisplay SemiBold Italic'), local('RecifeDisplay-SemiBoldItalic'),
+        url('RecifeDisplay-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('RecifeDisplay-SemiBoldItalic.woff2') format('woff2'),
+        url('RecifeDisplay-SemiBoldItalic.woff') format('woff'),
+        url('RecifeDisplay-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RecifeText';
+    src: url('RecifeText-SemiBoldItalic.eot');
+    src: local('RecifeText SemiBold Italic'), local('RecifeText-SemiBoldItalic'),
+        url('RecifeText-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('RecifeText-SemiBoldItalic.woff2') format('woff2'),
+        url('RecifeText-SemiBoldItalic.woff') format('woff'),
+        url('RecifeText-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RecifeDisplay';
+    src: url('RecifeDisplay-RegularItalic.eot');
+    src: local('RecifeDisplay Regular Italic'), local('RecifeDisplay-RegularItalic'),
+        url('RecifeDisplay-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('RecifeDisplay-RegularItalic.woff2') format('woff2'),
+        url('RecifeDisplay-RegularItalic.woff') format('woff'),
+        url('RecifeDisplay-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'RecifeText';
+    src: url('RecifeText-Bold.eot');
+    src: local('RecifeText Bold'), local('RecifeText-Bold'),
+        url('RecifeText-Bold.eot?#iefix') format('embedded-opentype'),
+        url('RecifeText-Bold.woff2') format('woff2'),
+        url('RecifeText-Bold.woff') format('woff'),
+        url('RecifeText-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RecifeDisplay Book';
+    src: url('RecifeDisplay-BookItalic.eot');
+    src: local('RecifeDisplay Book Italic'), local('RecifeDisplay-BookItalic'),
+        url('RecifeDisplay-BookItalic.eot?#iefix') format('embedded-opentype'),
+        url('RecifeDisplay-BookItalic.woff2') format('woff2'),
+        url('RecifeDisplay-BookItalic.woff') format('woff'),
+        url('RecifeDisplay-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
