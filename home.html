@@ -6,6 +6,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Haneefah Aliu</title>
         <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="assets/favicon/apple-touch-icon.png">
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="assets/favicon/favicon-32x32.png">
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="assets/favicon/favicon-16x16.png">
+        <link rel="manifest" href="assets/favicon/site.webmanifest">
+        <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -21,7 +36,18 @@
                 <a class="active" href="home.html">home</a>
                 <a href="about.html">about</a>
                 <a href="works.html">works</a>
-                <a href="assets/Aliu's Resume.pdf" download>resume</a>
+                <a href="assets/Aliu's Resume.pdf" download="download">resume</a>
+            </div>
+            <span class="icon" onclick="openNav()">&#9776;</span>
+        </div>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="home.html">home</a>
+                <a href="about.html">about</a>
+                <a href="works.html">works</a>
+                <a href="assets/Aliu's Resume.pdf" download="download">resume</a>
             </div>
         </div>
 
@@ -45,11 +71,17 @@
                 <div class="flex">
                     <div>
                         <h2>Product Design</h2>
-                        <p>As a product designer, I work with various design tools to create high-fidelity designs and prototypes. I’m focused on designing products where the users can easily get the concept of the product while also being aesthetically pleasing.</p>
+                        <p>As a product designer, I work with various design tools to create
+                            high-fidelity designs and prototypes. I’m focused on designing products where
+                            the users can easily get the concept of the product while also being
+                            aesthetically pleasing.</p>
                     </div>
                     <div>
                         <h2>Frontend Development</h2>
-                        <p>As a frontend developer, I work with various web tools and technologies to implement designs that users can see and interact with. I emphasize on developing responsive websites that can be seen across various screen sizes. </p>
+                        <p>As a frontend developer, I work with various web tools and technologies to
+                            implement designs that users can see and interact with. I emphasize on
+                            developing responsive websites that can be seen across various screen sizes.
+                        </p>
                     </div>
                     <div>
                         <h2>Skills/tools</h2>
@@ -76,7 +108,8 @@
                     </div>
                     <div class="text-section">
                         <h1>HomeNow</h1>
-                        <p>HomeNow is a mobile application that helps users to rent or buy properties while communicating directly with the owner.</p>
+                        <p>HomeNow is a mobile application that helps users to rent or buy properties
+                            while communicating directly with the owner.</p>
                         <a href="https://www.behance.net/gallery/113534739/HomeNow" target="_blank">View Case
                             <i class="fa fa-angle-right"></i>
                         </a>
@@ -92,7 +125,9 @@
                 </div>
                 <div class="text-section">
                     <h1>QuickMed</h1>
-                    <p>QuickMed is a drug delivery app where you can easily order and purchase drugs and have it delivered to you. You can also schedule your delivery or upload prescriptions from your doctor to get your drugs delivered to you</p>
+                    <p>QuickMed is a drug delivery app where you can easily order and purchase drugs
+                        and have it delivered to you. You can also schedule your delivery or upload
+                        prescriptions from your doctor to get your drugs delivered to you</p>
                     <a href="https://www.behance.net/gallery/112372565/QuickMed" target="_blank">View Case
                         <i class="fa fa-angle-right"></i>
                     </a>
@@ -101,7 +136,7 @@
         </div>
 
         <div class="container">
-            <div class="body-content">
+            <div class="body-content responsive">
                 <h1>Send me a message!</h1>
                 <br>
                 <p>Do you have a question or just want to say hi, leave a message and I'll get
@@ -113,10 +148,27 @@
         <hr class="hr">
 
         <div class="footer">
-            <a href="http://linkedin.com/in/haneefah-aliu-6a8a21160">Linkedin</a>
-            <a href="https://twitter.com/haneeefahhh">Twitter</a>
-            <a href="https://www.behance.net/haneefahhh">Behance</a>
-            <a href="https://github.com/HaneefahAliu">Github</a>
+            <a href="http://linkedin.com/in/haneefah-aliu-6a8a21160" target="_blank">Linkedin</a>
+            <a href="https://twitter.com/haneeefahhh" target="_blank">Twitter</a>
+            <a href="https://www.behance.net/haneefahhh" target="_blank">Behance</a>
+            <a href="https://github.com/HaneefahAliu" target="_blank">Github</a>
         </div>
+
+        <script>
+            function openNav() {
+                document
+                    .getElementById("myNav")
+                    .style
+                    .display = "block";
+            }
+
+            function closeNav() {
+                document
+                    .getElementById("myNav")
+                    .style
+                    .display = "none";
+            }
+        </script>
+
     </body>
 </html>

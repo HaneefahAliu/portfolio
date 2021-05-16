@@ -1,303 +1,582 @@
 /* font-family: 'Inter', sans-serif;
 font-family: 'Cormorant Garamond', serif; */
 
+/* reset */
+abbr,
+address,
+article,
+aside,
+audio,
+b,
+blockquote,
+body,
+canvas,
+caption,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+p,
+pre,
+q,
+samp,
+section,
+small,
+span,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
 /* general styles */
 body {
     color: #000000;
     background-color: #ffffff;
+    /* line-height: 1; */
 }
-
 
 h1,
 h2,
 p {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 hr {
-  width: 90%;
-  border: 1px solid #000000;
+    width: 90%;
+    border: 1px solid #000000;
 }
-
 
 /* nav */
 .header {
-  overflow: hidden;
-  padding: 20px 10px;
-  width: 95%;
-  margin: auto;
+    overflow: hidden;
+    padding: 20px 10px;
+    width: 95%;
+    margin: auto;
 }
 
 .header a {
-  font-family: 'Inter', sans-serif;
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 12px;
-  padding-right: 40px;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 200;
+    font-family: 'Inter', sans-serif;
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px 40px 12px 12px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 200;
 }
 
 .header a.logo {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 30px;
-  font-weight: bold;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .header a.logo:hover {
-  color: #000000;
+    color: #000000;
 }
 
 .header a:hover {
-color: #FFA500;
+    color: #FFA500;
 }
 
 .header a.active {
-  color: #FFA500;
-  text-decoration: line-through;
+    color: #FFA500;
+    text-decoration: line-through;
 }
 
 .header-right {
-  float: right;
+    float: right;
 }
-
-.header .icon {
-  display: none;
-}
-
 
 .footer {
-   width: 90%;
-   text-align: right;
-   padding: 50px;
+    width: 90%;
+    text-align: right;
+    padding: 50px;
 }
 
 .footer a {
-  font-family: 'Cormorant Garamond', serif;
-  padding-left: 40px;
-  font-size: 22px;
-  text-decoration: none;
-  color: #000000;
+    font-family: 'Cormorant Garamond', serif;
+    padding-left: 40px;
+    font-size: 22px;
+    text-decoration: none;
+    color: #000000;
 }
 
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    font-family: 'Inter', sans-serif;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover {
+    color: #FFA500;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+span.icon {
+    cursor: pointer;
+    font-size: 30px;
+    padding-left: 90px;
+    display: none;
+}
 
 /* home */
 .container {
-padding: 80px 100px;
+    padding: 80px 100px;
 }
-
 
 .body-content span {
-  font-size: 30px;
+    font-size: 30px;
 }
 
-.body-content h1{
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 70px;
-  text-align: center;
+.body-content h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 70px;
+    text-align: center;
 }
 
 .body-content h2,
 .body-content p {
-  font-family: 'Inter', sans-serif;
-  font-weight: 300;
-  text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    text-align: center;
 }
 
 .body-content h2 {
-  font-size: 18px;
-  padding-bottom: 20px;
+    font-size: 18px;
+    padding-bottom: 20px;
 }
 
-.body-content p{
-  font-size: 16px;
-  line-height: 1.6;
-  max-width: 800px;
-  padding-bottom: 50px;
-  margin: auto;
+.body-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    padding-bottom: 50px;
+    margin: auto;
 }
 
 .body-content a {
-  font-family: 'Inter', sans-serif;
-  border: none;
-  border-radius: 5px;
-  background-color: #000000;
-  color: #ffffff;
-  padding: 14px 28px;
-  font-size: 14px;
-  cursor: pointer;
-  margin-left: 43%;
-  /* margin-right: 45%; */
-  text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 14px 28px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 43%;
+    /* margin-right: 45%; */
+    text-decoration: none;
 }
 
 .body-content a:hover {
-  color: #000000;
-  background-color: #ffffff;
-  text-decoration: line-through;
+    color: #000000;
+    background-color: #ffffff;
+    text-decoration: line-through;
 }
 
 .body-content i {
-  font-size: 35px;
-  padding-top: 150px;
-  margin-left: 47%;
+    font-size: 35px;
+    padding-top: 150px;
+    margin-left: 47%;
 }
-
-
 
 /* projects */
 .projects h1 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 50px;
-  padding-bottom: 70px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 50px;
+    padding-bottom: 70px;
 }
 
 .project {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .img-section {
-  width: 50%;
+    width: 50%;
 }
 
 .img-section img {
-  width: 400px;
-  height: 400px;
+    width: 400px;
+    height: 400px;
 }
 
 .text-section {
-  width: 50%;
+    width: 50%;
 }
 
 .text-section h1 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 40px;
-  padding-bottom: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    padding-bottom: 20px;
 }
 
 .text-section p {
-  line-height: 2;
-  max-width: 550px;
-  padding-bottom: 40px;
-  font-family: 'Inter', sans-serif;
-  font-size: 17px;
+    line-height: 2;
+    max-width: 550px;
+    padding-bottom: 40px;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
 }
 
 .text-section a {
-  text-decoration: none;
-  font-family: 'Inter', sans-serif;
-  color: #FFA500;
-  font-weight: 300;
-  font-size: 18px;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    color: #FFA500;
+    font-weight: 300;
+    font-size: 18px;
 }
 
 .text-section a:hover {
-  text-decoration: line-through;
+    text-decoration: line-through;
 }
 
 hr.divider {
-  border: 1px dashed #c0c0c0;
-  width: 100%;
-  margin: 100px 0;
+    border: 1px dashed #c0c0c0;
+    width: 100%;
+    margin: 100px 0;
 }
 
 .skills h1 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 50px;
-  padding-bottom: 30px;
-  text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 50px;
+    padding-bottom: 30px;
+    text-align: center;
 }
 
 .flex {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .flex > div {
-  padding-right: 70px;
-  padding-left: 70px;
+    padding-right: 70px;
+    padding-left: 70px;
 }
 
 .flex h2 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 30px;
-  padding-bottom: 10px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    padding-bottom: 10px;
 }
 
 .flex p {
-  font-family: 'Inter', sans-serif;
-  line-height: 1.7;
-  max-width: 400px;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+    max-width: 400px;
 }
 
 .flex ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .flex ul li {
-  font-family: 'Inter', sans-serif;
-  padding-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 20px;
 }
 
-
-.flex ul li:before { /* the custom styled bullets */
-  background-color: #FFA500;
-  border-radius: 50%;
-  content: "";
-  display: inline-block;
-  margin-right: 15px;
-  margin-bottom: -2px;
-  height: 15px;
-  width: 15px;
+.flex ul li:before {
+    /* the custom styled bullets */
+    background-color: #FFA500;
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: -2px;
+    height: 15px;
+    width: 15px;
 }
-
-
 
 /* about  */
 .flex-ctn {
-  display: flex;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
 
 .img-ctn img {
-  width: 300px;
-  height: 400px;
+    width: 300px;
+    height: 400px;
 }
 
 .text-ctn h1 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 45px;
-  padding-bottom: 30px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 45px;
+    padding-bottom: 30px;
 }
 
 .text-ctn p {
-  font-family: 'Inter', sans-serif;
-  font-weight: 300;
-  line-height: 1.7;
-  font-size: 17px;
-  max-width: 700px;
-  padding-bottom: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    font-size: 17px;
+    max-width: 700px;
+    padding-bottom: 30px;
 }
 
 .text-ctn a {
-  color: #FFA500;
+    color: #FFA500;
 }
 
 .extras p {
-  font-family: 'Inter', sans-serif;
-  font-weight: 300;
-  line-height: 1.7;
-  font-size: 17px;
-  padding: 30px 50px 0 50px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    font-size: 17px;
+    padding: 30px 50px 0;
 }
 
-
-
-
 /* responsive */
+/* ipad */
+@media only screen and (max-width: 1024px) {
+
+    .container {
+        padding: 80px 50px;
+    }
+
+    .body-content i {
+        display: none;
+    }
+
+    .body-content h2 {
+        padding-top: 15px;
+    }
+
+    .body-content p {
+        max-width: 600px;
+    }
+
+    .flex > div {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .flex p {
+        font-family: 'Inter', sans-serif;
+        line-height: 1.7;
+        max-width: 800px;
+    }
+
+    .img-section img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .text-section p {
+        line-height: 2;
+        max-width: 400px;
+        padding-bottom: 40px;
+        font-family: 'Inter', sans-serif;
+        font-size: 17px;
+    }
+
+    .text-ctn p {
+        font-family: 'Inter', sans-serif;
+        font-weight: 300;
+        line-height: 1.7;
+        font-size: 17px;
+        max-width: 500px;
+        padding-bottom: 30px;
+    }
+}
+
+/* iphone */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 80px 20px;
+    }
+
+    .flex {
+        display: block;
+    }
+
+    .flex > div {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .flex h2 {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+
+    .flex p {
+        font-family: 'Inter', sans-serif;
+        line-height: 1.7;
+        max-width: 400px;
+        padding-bottom: 40px;
+    }
+
+    .projects h1,
+    .skills h1 {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 40px;
+        padding-bottom: 30px;
+        text-align: left;
+    }
+
+    .project {
+        display: block;
+    }
+
+    .img-section img {
+        width: 300px;
+        height: 300px;
+        padding-bottom: 20px;
+    }
+
+    .text-section {
+        width: 100%;
+    }
+
+    .text-section p {
+        line-height: 1.7;
+        max-width: 950px;
+        padding-bottom: 40px;
+        font-family: 'Inter', sans-serif;
+        font-size: 17px;
+    }
+
+    .body-content a {
+        margin-left: 32%;
+    }
+
+    .responsive h1 {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .responsive p {
+        max-width: 300px;
+    }
+
+    .responsive a {
+        margin-left: 26%;
+    }
+
+    .footer {
+        width: 80%;
+        text-align: right;
+        padding: 50px;
+    }
+
+    .footer a {
+        padding-left: 22px;
+        font-size: 16px;
+    }
+
+    .flex-ctn {
+        display: block;
+    }
+
+    .img-ctn {
+        padding-bottom: 20px;
+    }
+
+    .extras p {
+        font-size: 17px;
+        padding: 0;
+    }
+
+    .header-right a {
+        display: none;
+    }
+
+    .header a.logo {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 30px;
+        font-weight: bold;
+        padding-right: 130px;
+    }
+
+    span.icon {
+        display: block;
+        margin: 8px;
+    }
+}
